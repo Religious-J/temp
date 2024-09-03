@@ -50,7 +50,7 @@ tecoalStatus_t TECOALWINAPI tecoalUnaryOps(tecoalHandle_t handle, tecoalUnaryOps
     arg.y = y;
     arg.n = count;
     arg.spe_num = handle->spe_num;
-    arg.alpha_f32 = ((float *)alpha)[0];
+    arg.alpha_int32 = ((int *)alpha)[0];
 
     UnaryOpsPatchArgs arg_patch;
     arg_patch.arg = &arg;

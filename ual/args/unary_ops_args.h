@@ -39,6 +39,7 @@ typedef struct UnaryOpsArgs {
     int mode;
     const void *x;
     float alpha_f32;
+    int alpha_int32;
     void *y;
     int n;
     int spe_num;

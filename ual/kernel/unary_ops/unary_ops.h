@@ -37,6 +37,8 @@ namespace kernel {
 
 __global__ void tecoKernelUnaryOpsWithAlphaFT32(UnaryOpsArgs arg);
 
+__global__ void tecoKernelUnaryOpsWithAlphaINT32(UnaryOpsArgs arg);
+
 }  // namespace kernel
 }  // namespace ual
 }  // namespace tecoal

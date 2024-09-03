@@ -52,11 +52,13 @@ struct UnaryOpsType {
 
 static UnaryOpsType::PImplType UnaryOpsAlgos[] = {
     tecoKernelUnaryOpsWithAlphaFT32,
+    tecoKernelUnaryOpsWithAlphaINT32,
     // more branches
 };
 
 static const char *UnaryOpsDiscription[] = {
     "tecoKernelUnaryOpsWithAlphaFT32",
+    "tecoKernelUnaryOpsWithAlphaINT32",
     // more branches
 };
 

@@ -43,6 +43,14 @@ UnaryOpsBranch findUnaryOpsBranch(const UnaryOpsPatchArgs *arg) {
             }
         }
     }
+    else if (arg->x_data_type == UALDataType::UAL_DTYPE_INT32 &&
+        arg->y_data_type == UALDataType::UAL_DTYPE_INT32) {
+        if (arg->mode == 13 || arg->mode == 11) {
+            if (arg->algo == UALAlgoType::UAL_ALGO_0) {
+                return UnaryOpsBranch::UNARY_OPS_INT32;
+            }
+        }
+    }
     // If none of the above conditions are met, indicating no specialized branch was found.
     return UnaryOpsBranch::UNARY_OPS_END;
 }

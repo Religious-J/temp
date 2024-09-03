@@ -37,6 +37,7 @@ namespace ops {
 
 typedef enum class UnaryOpsBranch {
     UNARY_OPS_FLOAT = 0,
+    UNARY_OPS_INT32 = 1,
     // insert enum
     UNARY_OPS_END
 } UnaryOpsBranch;
